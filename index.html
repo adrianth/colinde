@@ -13,7 +13,37 @@
         margin: 0;
         padding: 0 0 100px 0; /* keep bottom space for controls */
         line-height: 1.6;
-        transition: font-size 0.2s ease;
+        transition: font-size 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Light Mode Theme */
+    body.light-mode {
+        background-color: #f5f5f5;
+        color: #212121;
+    }
+
+    body.light-mode h2 {
+        color: #e65100;
+        border-bottom-color: #ddd;
+    }
+
+    body.light-mode .refren {
+        color: #2e7d32;
+        border-left-color: #2e7d32;
+    }
+
+    body.light-mode button {
+        background-color: #e0e0e0;
+        color: #212121;
+        border-color: #bdbdbd;
+    }
+
+    body.light-mode button:active {
+        background-color: #bdbdbd;
+    }
+
+    body.light-mode #size-display {
+        color: #666;
     }
 
     /* Container for the lyrics */
@@ -220,8 +250,8 @@
 
 <div class="controls">
     <button onclick="changeSize(2)">A+</button>
-    <span id="size-display">Zoom</span>
     <button onclick="changeSize(-2)">A-</button>
+    <button onclick="toggleTheme()">☀️🌙</button>
 </div>
 
 <script>
@@ -238,6 +268,25 @@
 
         bodyText.style.fontSize = currentSize + 'px';
     }
+
+    function toggleTheme() {
+        bodyText.classList.toggle('light-mode');
+        
+        // Save preference to localStorage
+        if (bodyText.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+        } else {
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    // Load saved theme preference on page load
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            bodyText.classList.add('light-mode');
+        }
+    });
 </script>
 
 </body>
