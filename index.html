@@ -1,179 +1,228 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colinde</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colinde</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="NoSleep.min.js"></script>
 </head>
-<body id="body-text" style="font-size: 18px;">
 
-<div class="container">
+<body id="body-text">
 
-    <h2>1. La Viflaim colo-n jos</h2>
-    
-    <div class="verse">
-        La Viflaim colo-n jos<br>
-        Cerul arde luminos<br>
-        Prea Curata naște astăzi pe Hristos
+    <div class="container">
+
+        <h2>1. La Viflaim colo-n jos</h2>
+
+        <div class="verse">
+            La Viflaim colo-n jos<br>
+            Cerul arde luminos<br>
+            Prea Curata naște astăzi pe Hristos
+        </div>
+
+        <div class="verse">
+            Naşte-n ieslea oilor<br>
+            Pe-mpăratul tuturor,<br>
+            Prea Curata stă și plânge-ncetișor.
+        </div>
+
+        <div class="verse">
+            N-are scutec de-nfășat,<br>
+            Nici hăinuță de-mbrăcat<br>
+            Prea Curata, pentru pruncul de-mpărat
+        </div>
+
+        <div class="verse">
+            Nu mai plânge, Maica mea<br>
+            Scutecele noi ți-om da,<br>
+            Prea Curată, pruncul sfânt de-i înfășa
+        </div>
+
+        <h2>2. Am pornit cu colindatu'</h2>
+
+        <div class="verse">
+            Am pornit cu colindatu' / Hai, hai florile dalbe<br>
+            Şi de-a lungul şi de-a latul / Flori dalbe flori<br>
+            La bogaţi şi la săraci / Hai, hai florile dalbe<br>
+            Că toți oamenii ni-s dragi / Flori dalbe flori
+        </div>
+
+        <div class="verse refren">
+            Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
+            Și de mult, și de puţin / Noi cu drag îţi mulţumim
+        </div>
+
+        <div class="verse">
+            Deschide poarta om bun / Hai, hai florile dalbe<br>
+            Că-i sfânta zi de Crăciun / Flori dalbe flori<br>
+            Să-ţi cântăm, să-ți colindăm / Hai, hai florile dalbe<br>
+            Inima să-ţi bucurăm / Flori dalbe flori
+        </div>
+
+        <div class="verse refren">
+            Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
+            Și de mult, și de puţin / Noi cu drag îţi mulţumim
+        </div>
+
+        <div class="verse">
+            Să rămâi, gazdă, cu bine / Hai, hai florile dalbe<br>
+            Pân' la anul care vine / Flori dalbe flori<br>
+            Că tot noi la dumneata / Hai, hai florile dalbe<br>
+            Vom veni și-om colinda / Flori dalbe flori
+        </div>
+
+        <div class="verse refren">
+            Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
+            Și de mult, și de puţin / Noi cu drag îţi mulţumim
+        </div>
+
+        <h2>3. Asta-i seara de Crăciun</h2>
+
+        <div class="verse">
+            Asta-i seara de Crăciun<br>
+            Precum străbunii ne spun
+        </div>
+
+        <div class="verse refren">
+            Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
+            Asta-i seara, seara de Crăciun
+        </div>
+
+        <div class="verse">
+            Acest praznic luminat<br>
+            Ce cu drag l-am aşteptat
+        </div>
+
+        <div class="verse refren">
+            Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
+            Asta-i seara, seara de Crăciun
+        </div>
+
+        <div class="verse">
+            Crăciunul pe toţi ne-adună<br>
+            Să fim astăzi împreună
+        </div>
+
+        <div class="verse refren">
+            Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
+            Asta-i seara, seara de Crăciun
+        </div>
+
+        <div class="verse">
+            Vă dorim ca să vă fie<br>
+            Un prilej de bucurie
+        </div>
+
+        <div class="verse refren">
+            Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
+            Asta-i seara, seara de Crăciun
+        </div>
+
+        <div class="verse">
+            La mulţi ani s-aveți folos<br>
+            De naşterea lui Hristos
+        </div>
+
+        <div class="verse refren">
+            Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
+            Asta-i seara, seara de Crăciun<br>
+            <br>
+            [ULTIMUL REFREN SE REPETĂ DE DOUĂ ORI]
+        </div>
     </div>
 
-    <div class="verse">
-        Naşte-n ieslea oilor<br>
-        Pe-mpăratul tuturor,<br>
-        Prea Curata stă și plânge-ncetișor.
+    <div class="controls">
+        <button onclick="changeSize(2)">A+</button>
+        <button onclick="changeSize(-2)">A-</button>
+        <button onclick="toggleTheme()">☀️🌙</button>
+        <button id="wakeLockBtn" onclick="toggleWakeLock()">👀</button>
     </div>
 
-    <div class="verse">
-        N-are scutec de-nfășat,<br>
-        Nici hăinuță de-mbrăcat<br>
-        Prea Curata, pentru pruncul de-mpărat
+    <div class="container" style="margin: auto; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <span>Codul QR pentru această pagină:</span>
+        <img style="max-width: 200px;" src="qr-home.png" />
     </div>
 
-    <div class="verse">
-        Nu mai plânge, Maica mea<br>
-        Scutecele noi ți-om da,<br>
-        Prea Curată, pruncul sfânt de-i înfășa
-    </div>
-
-    <h2>2. Am pornit cu colindatu'</h2>
-
-    <div class="verse">
-        Am pornit cu colindatu' / Hai, hai florile dalbe<br>
-        Şi de-a lungul şi de-a latul / Flori dalbe flori<br>
-        La bogaţi şi la săraci / Hai, hai florile dalbe<br>
-        Că toți oamenii ni-s dragi / Flori dalbe flori
-    </div>
-
-    <div class="verse refren">
-        Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
-        Și de mult, și de puţin / Noi cu drag îţi mulţumim
-    </div>
-
-    <div class="verse">
-        Deschide poarta om bun / Hai, hai florile dalbe<br>
-        Că-i sfânta zi de Crăciun / Flori dalbe flori<br>
-        Să-ţi cântăm, să-ți colindăm / Hai, hai florile dalbe<br>
-        Inima să-ţi bucurăm / Flori dalbe flori
-    </div>
-
-    <div class="verse refren">
-        Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
-        Și de mult, și de puţin / Noi cu drag îţi mulţumim
-    </div>
-
-    <div class="verse">
-        Să rămâi, gazdă, cu bine / Hai, hai florile dalbe<br>
-        Pân' la anul care vine / Flori dalbe flori<br>
-        Că tot noi la dumneata / Hai, hai florile dalbe<br>
-        Vom veni și-om colinda / Flori dalbe flori
-    </div>
-
-    <div class="verse refren">
-        Hai gazdă, dă-ne ceva / Ce te lasă inima<br>
-        Și de mult, și de puţin / Noi cu drag îţi mulţumim
-    </div>
-
-    <h2>3. Asta-i seara de Crăciun</h2>
-
-    <div class="verse">
-        Asta-i seara de Crăciun<br>
-        Precum străbunii ne spun
-    </div>
-
-    <div class="verse refren">
-        Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
-        Asta-i seara, seara de Crăciun
-    </div>
-
-    <div class="verse">
-        Acest praznic luminat<br>
-        Ce cu drag l-am aşteptat
-    </div>
-
-    <div class="verse refren">
-        Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
-        Asta-i seara, seara de Crăciun
-    </div>
-
-    <div class="verse">
-        Crăciunul pe toţi ne-adună<br>
-        Să fim astăzi împreună
-    </div>
-
-    <div class="verse refren">
-        Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
-        Asta-i seara, seara de Crăciun
-    </div>
-
-    <div class="verse">
-        Vă dorim ca să vă fie<br>
-        Un prilej de bucurie
-    </div>
-
-    <div class="verse refren">
-        Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
-        Asta-i seara, seara de Crăciun
-    </div>
-
-    <div class="verse">
-        La mulţi ani s-aveți folos<br>
-        De naşterea lui Hristos
-    </div>
-
-    <div class="verse refren">
-        Să cântăm, să colindăm, pe Isus să-l lăudăm<br>
-        Asta-i seara, seara de Crăciun<br>
-        <br>
-        [ULTIMUL REFREN SE REPETĂ DE DOUĂ ORI]
-    </div>
-</div>
-
-<div class="controls">
-    <button onclick="changeSize(2)">A+</button>
-    <button onclick="changeSize(-2)">A-</button>
-    <button onclick="toggleTheme()">☀️🌙</button>   
-</div>
-
-<div class="container" style="margin: auto; display: flex; flex-direction: column; align-items: center; gap: 10px;">
-    <span>Codul QR pentru aceasta pagină:</span>
-    <img style="max-width: 200px;" src="qr-home.png" />
-</div>
-
-<script>
-    // Initial font size
-    let currentSize = 18;
-    const bodyText = document.getElementById('body-text');
-
-    function changeSize(amount) {
-        currentSize += amount;
-        
-        // Prevent it from getting too small or too huge
-        if (currentSize < 12) currentSize = 12;
-        if (currentSize > 40) currentSize = 40;
-
+    <script>
+        // Initial font size
+        let currentSize = 20;
+        const bodyText = document.getElementById('body-text');
         bodyText.style.fontSize = currentSize + 'px';
-    }
 
-    function toggleTheme() {
-        bodyText.classList.toggle('dark-mode');
+        function changeSize(amount) {
+            currentSize += amount;
+
+            // Prevent it from getting too small or too huge
+            if (currentSize < 12) currentSize = 12;
+            if (currentSize > 40) currentSize = 40;
+
+            bodyText.style.fontSize = currentSize + 'px';
+        }
+
+        function toggleTheme() {
+            bodyText.classList.toggle('dark-mode');
+
+            // Save preference to localStorage
+            if (bodyText.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // NoSleep wake lock implementation
+        var noSleep = new NoSleep();
+        var wakeLockEnabled = false;
+
+        function enableWakeLock() {
+            if (!wakeLockEnabled) {
+                toggleWakeLock();
+
+            }
+        }
+
+        function toggleWakeLock() {
+            try {
+                if (wakeLockEnabled) {
+                    noSleep.disable();
+                    wakeLockEnabled = false;
+
+                    // Remove active class from button
+                    const wakeLockBtn = document.getElementById('wakeLockBtn');
+                    if (wakeLockBtn) {
+                        wakeLockBtn.classList.remove('wake-lock-active');
+                    }
+
+                    console.log("Wake Lock is disabled - screen can turn off");
+                } else {
+                    noSleep.enable();
+                    wakeLockEnabled = true;
+
+                    // Add active class to button
+                    const wakeLockBtn = document.getElementById('wakeLockBtn');
+                    if (wakeLockBtn) {
+                        wakeLockBtn.classList.add('wake-lock-active');
+                    }
+
+                    console.log("Wake Lock is enabled - screen will stay on");
+                }
+            } catch (err) {
+                console.error("Wake Lock error:", err);
+            }
+        }
         
-        // Save preference to localStorage
-        if (bodyText.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
-    }
+        document.addEventListener('click', enableWakeLock, { once: true });
 
-    // Load saved theme preference on page load
-    window.addEventListener('DOMContentLoaded', () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            bodyText.classList.add('dark-mode');
-        }
-    });
-</script>
+        // Load saved theme preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                bodyText.classList.add('dark-mode');
+            }
+        });
+    </script>
 
 </body>
+
 </html>
