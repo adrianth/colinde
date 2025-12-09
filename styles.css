@@ -112,3 +112,20 @@ button.wake-lock-active {
 body.dark-mode button.wake-lock-active {
     background-color: hsla(120, 45%, 30%, 0.8);
 }
+
+/* Playing instructions */
+.instruction {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #856404;
+    border-radius: 4px;
+}
+
+body.dark-mode .instruction {
+    background-color: #3a3020;
+    border-left-color: #ffc107;
+    color: #ffd54f;
+}
